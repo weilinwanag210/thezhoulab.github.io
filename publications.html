@@ -1,0 +1,17 @@
+---
+permalink: /publications
+layout: default
+---
+
+{%- assign all_pubs = site.data.pubs | sort: 'year' -%}
+{%- assign pub_num = all_pubs.size -%}
+{% assign author = "R Zhou" %}
+
+{%- assign pubs = all_pubs | where: "type", "1" | sort: 'years' | reverse -%}
+<h2>Selected publications: </h2>
+{% include publications/pubs.html %}
+
+{%- assign pubs = all_pubs | where: "type", "0" | sort: 'year' | reverse %}
+{%- assign pub_num = pubs.size -%}
+<h2>Other publications: </h2>
+{% include publications/pubs.html %}

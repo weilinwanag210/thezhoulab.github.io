@@ -1,0 +1,38 @@
+---
+title: Zhou Lab
+lab_name: Zhou Lab @ PSU
+layout: default
+---
+<style type="text/css" media="screen">
+  #index-bg{    
+  	height: 300px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    margin-top: 20px;
+    padding: 300px 50px 20px 20px;
+    border-radius: 30px;
+    font-size: 30px;
+  }
+  html{
+		background-image: url('/assets/images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: 120% auto;
+		color: white;
+  }
+  body{
+  	background-color: transparent;
+  }
+</style>
+<div id="index-bg">
+<p><b style="font-size: 50px;
+    font-family: 'Bebas Neue', cursive;">The Zhou Lab</b> is an interdisciplinary research group that develops and applies physical, chemical and engineering approaches to study living systems and biological processes involved in basic cell functions as well as in cancer and neurodegenerative diseases </p>
+</div>
+
+<script type="text/javascript">
+const el = document.querySelector("html");
+
+el.addEventListener("mousemove", (e) => {
+  el.style.backgroundPositionX = -e.pageX*0.1 + "px";
+  el.style.backgroundPositionY = -e.pageY*0.1 + "px";
+});
+</script>

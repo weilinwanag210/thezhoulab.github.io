@@ -1,0 +1,15 @@
+<div id="pubs">
+{%- for pub in pubs: -%}
+  <div id="pub">
+    <p><span>{{pub_num}}. {{pub.title}}</span></p>
+    {% assign other_author = pub.author | split: author %}
+    <p><span>{{other_author[0]}}</span><b>{{author}}</b><span>{{other_author[1]}}</span><span style="font-style: italic; font-weight: bold;"> {{pub.publisher}}</span><span> {{pub.page}}</span></span><span> ({{pub.year}})</span></p>
+    <span>{{pub.img}}</span>
+    <img id="pub_img" src={{pub.img}}>
+  </div>
+  {%- assign pub_num = pub_num | minus: 1 -%}
+{%- endfor -%}
+</div>
+
+
+<!-- TODO: search for publications display format -->

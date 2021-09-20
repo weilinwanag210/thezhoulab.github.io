@@ -1,0 +1,211 @@
+---
+permalink: /playground
+layout: default
+---
+
+<style type="text/css" media="screen">
+:root {
+  --slider-width: 60rem;
+  --slider-height: 20rem;
+}
+
+.compare {
+  position: relative;
+  height: var(--slider-height);
+  width: var(--slider-width);
+}
+
+.compare_overlay {
+  position: absolute;
+  height: var(--slider-height);
+  width: var(--slider-width);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+
+.cmp_img img {
+  height: var(--slider-height);
+  width: var(--slider-width);
+  object-fit: cover;
+  float: left;
+}
+.compare_slider {
+  position: absolute;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  background: #121212;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.2s;
+}
+
+.compare_slider:active {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+}
+</style>
+
+<div class="compare">
+  <div class="cmp_img">
+    <img src="/assets/images/cmp1.jpg">
+  </div>
+  <div class="cmp_img compare_overlay">
+    <img src="/assets/images/cmp2.jpg">
+  </div>
+</div>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script type="text/javascript">
+  AOS.init({
+ duration: 1200
+});
+</script>
+<style type="text/css">
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+  background-repeat: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 66.64%;
+}
+
+.item span {
+  display: block;
+  font-size: 1rem;
+}
+
+.proj {
+  width: 400px;
+  height: 500px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 20px;
+}
+.proj-0 {
+  z-index: 0;
+  background: #8e44ad;
+}
+.proj-1 {
+  z-index: 1;
+  background: #2980b9;
+}
+.proj-2 {
+  z-index: 2;
+  background: #16a085;
+}
+</style>
+
+<div class="proj proj-0"
+     data-aos="fade-left"
+     data-aos-anchor="#trig-0">
+  Project 1:
+  <span>MPS related</span>
+</div>
+
+<div class="proj proj-1"
+     data-aos="fade-left"
+     data-aos-anchor="#trig-1">
+  Project 2:
+  <span>Liquid-Liquid Phase separatioin</span>
+</div>
+
+<div class="proj proj-2"
+     data-aos="fade-left"
+     data-aos-anchor="#trig-2">
+  Project 3:
+  <span>MPS related</span>
+</div>
+
+<div class="item"  style="background-image:url(assets/images/t0.png)" id="trig-0"></div>
+<div class="item">2</div>
+<div class="item">
+  3
+</div>
+<div class="item">6</div>
+<div class="item" style="background-image:url(assets/images/t1.png)" id="trig-1">
+4
+</div>
+<div class="item">7</div>
+<div class="item">9</div>
+<div class="item">10</div>
+<div class="item" style="background-image:url(assets/images/t2.png)" id="trig-2">12</div>
+<div class="item">11</div>
+
+<script type="text/javascript">
+  let isClicked = false;
+const image = document.querySelector(".compare_overlay");
+const width = image.offsetWidth;
+const height = image.offsetHeight;
+const slider = document.createElement("div");
+compare();
+function compare() {
+  image.parentElement.insertBefore(slider, image);
+  slider.classList.add("compare_slider");
+  slider.style.top = height / 2 - slider.offsetHeight / 2 + "px";
+  slider.style.left = width / 2 - slider.offsetWidth / 2 + "px";
+  image.style.width = "50%";
+  slider.addEventListener("mousedown", onSlideStart);
+  slider.addEventListener("touchstart", onSlideStart);
+  window.addEventListener("mouseup", () => (isClicked = false));
+  window.addEventListener("touchstop", () => (isClicked = false));
+  window.addEventListener("mousemove", onSlideMove);
+  window.addEventListener("touchmove", onSlideMove);
+}
+function onSlideStart(event) {
+  event.preventDefault();
+  isClicked = true;
+}
+function onSlideMove(event) {
+  if (!isClicked) return;
+  doSlide(currentPosition(event));
+}
+function currentPosition(event = window.event) {
+  let xImage = image.getBoundingClientRect();
+  let x = 0;
+  x = event.pageX - xImage.left;
+  if (x < 0) x = 0;
+  if (x > width) x = width;
+  return x;
+}
+function doSlide(x) {
+  image.style.width = x + "px";
+  slider.style.left = image.offsetWidth - slider.offsetWidth / 2 + "px";
+}
+</script>

@@ -1,0 +1,18 @@
+- name: Home
+  link: /
+- name: About
+  link: /about
+- name: Publications
+  link: /publications
+- name: News
+  link: /news
+- name: Team
+  link: /team
+- name: Join Us
+  link: /joinus
+- name: Play
+  link: /playground
+
+
+# - name: Contact
+#   link: /contact

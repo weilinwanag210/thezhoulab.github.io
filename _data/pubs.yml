@@ -1,0 +1,217 @@
+- author: R Zhou, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang.
+  title: Proteomic and functional analyses of the periodic membrane skeleton in neurons.
+  year: 2020
+  publisher: (Submitted) BioRxiv
+  link: https://www.google.com/url?q=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2020.12.23.424206v1&sa=D&sntz=1&usg=AFQjCNH9w2mHK_KSAiEV32fBG4YMl4JrZw
+  type: 1
+
+- author: R Zhou, B Han, C Xia, X Zhuang.
+  title: Membrane-associated periodic skeleton is a signaling platform for RTK transactivation in neurons.
+  year: 2019
+  type: 1
+  publisher: Science
+  page: 365, 929-934
+  highlight: 
+    publisher: Nature Reviews Neuroscience
+    title: A platform for coordinated signalling
+    page: 20, 647 
+    year: 2019
+    
+- author: R Zhou (co-corresponding author), O Yang, AC Déclais et al.
+  title: Junction resolving enzymes use multivalency to keep the Holliday junction dynamic.
+  year: 2019
+  type: 1
+  publisher: Nature Chemical Biology
+  page: 15, 269-275
+  highlight: 
+    author: 
+    title: Freedom of movement
+    publisher: Nature Chemical Biology
+    page: 15, 209-210
+
+- author: Y Sigal, R Zhou, X Zhuang.
+  title: Visualizing and discovering cellular structures with super-resolution microscopy.
+  year: 2018
+  type: 1
+  publisher: Science
+  page: 361, 880-887
+
+- author: B Han, R Zhou (co-first author, co-corresponding author), C Xia, X Zhuang.
+  title: Structural organization of the actin-spectrin–based membrane skeleton in dendrites and soma of neurons
+  year: 2017
+  type: 1
+  publisher: PNAS
+  page: 114,6678-6685
+
+- author: C Wang, B Han, R Zhou, X Zhuang.
+  title: Real-time imaging of translation on single mRNA transcripts in live cells.
+  year: 2016
+  type: 1
+  publisher: Cell
+  page: 165, 990-1001
+
+- author: J He, R Zhou (co-first author), Z Wu et al.
+  title: Prevalent presence of periodic actin-spectrin-based membrane skeleton in a broad range of neuronal cell types and animal species.
+  year: 2016
+  publisher: PNAS
+  page: 113, 6029-6034
+  type: 1
+
+- author: R Zhou, AG Kozlov, R Roy, J Zhang, S Korolev, TM Lohman and T Ha.
+  title: SSB functions as a sliding platform that migrates on DNA via reptation.
+  year: 2011
+  publisher: Cell
+  page: 146, 222-232
+  type: 1
+  selected: 
+    description: the Cell PaperFlick (video) of the issue (Watch on Youtube)
+    link: 
+
+- author: TTM Ngo, Q Zhang, R Zhou, JG Yodh and T Ha.
+  title: Asymmetric unwrapping of nucleosomes under tension directed by DNA local flexibility.
+  year: 2015
+  publisher: Cell
+  page: 160, 1135-1144
+  type: 1
+  highlight:
+    title: A Molecular Take on Aesop’s The Oak and the Reeds.
+    publisher: Cell
+    year: 2015
+    page: 160, 1139-1140
+
+- author: R Zhou, J Zhang, ML Bochman, VA Zakian and T Ha.
+  title: Periodic DNA patrolling underlies diverse functions of Pif1 on R-loops and G-rich DNA.
+  year: 2014
+  publisher: eLife
+  page: 3, e02190
+  type: 1
+  highlight:
+    title: "DNA Helicases: Molecular watchdogs on genome patrol"
+    page: 3, e02854
+    year: 2014
+    publisher: eLife
+
+- author: R Zhou, S Kunzelmann, M Webb, T Ha.
+  title: Detecting intramolecular conformational dynamics of single molecules in short distance range with sub-nanometer sensitivity.
+  year: 2011
+  publisher: Nano Letters
+  page: 11, 5482-5488
+  type: 1
+
+- author: C Grashoff , BD Hoffman, MD Brenner, R Zhou, M Parsons, MT Yang, M A. McLean, SG Sligar, CS Chen, T Ha and MA Schwartz.
+  title: Measuring mechanical tension across vinculin reveals regulation of focal adhesion dynamics.
+  year: 2010
+  publisher: Nature
+  page: 466, 263–266
+  type: 1
+  highlight: 
+    title: Sensing tension
+    page: 466, 192–193
+    year: 2010
+    publisher: Nature
+
+- author: S Hohng, R Zhou, MK Nahas, J Yu, K Schulten, DMJ Lilley and T Ha.
+  title: Fluorescence-force spectroscopy maps two-dimensional reaction landscape of the Holliday junction.
+  year: 2007
+  publisher: Science
+  page: 318, 279-283
+  type: 1
+  highlight:
+    title: "Fluorescence-force spectroscopy: watch your tether"
+    page: 4, 986-987
+    year: 2007
+    publisher: Nature Methods
+
+
+# additional publications:
+- author: DN Lorenzo, A Badea, R Zhou et al.
+  title: βII-spectrin promotes mouse brain connectivity through stabilizing axonal plasma membranes and enabling axonal organelle transport.
+  year: 2019
+  publisher: PNAS
+  page: 116, 15686-15695
+  type: 0
+
+- author: MD Brenner, R Zhou, et al.
+  title: Spider silk peptide is a compact, linear nanospring ideal for intracellular tension sensing.
+  year: 2016
+  publisher: Nano Letters
+  page: 16, 2096-2102
+  type: 0
+
+- author: G Zhong, J He, R Zhou, D. Lorenzo, HP Babcock, V Bennett, X Zhuang.
+  title: Developmental mechanism of the periodic membrane skeleton in axons.
+  year: 2015
+  publisher: eLife
+  page: 3, e04581
+  type: 0
+
+- author: B Hua, KY Han, R Zhou, H Kim, X Shi, SC Abeysirigunawardena, A Jain, D. Singh, V. Aggarwal, SA Woodson and T Ha.
+  title: An improved surface passivation method for single-molecule studies.
+  year: 2014
+  publisher: Nature Methods
+  page: 11, 1233-1236
+  type: 0
+
+- author: B Bhattacharyya, NP George, TM Thurmes, R Zhou, N Jani, SR Wessel, SJ Sandler, T Ha and JL Keck.
+  title: Structural mechanisms of PriA-mediated DNA replication restart.
+  year: 2014
+  publisher: PNAS
+  page: 111, 1373-1378
+  type: 0
+
+- author: J Zhang, R Zhou, J Inoue, T Mikawa, T Ha.
+  title: Single molecule analysis of Thermus thermophilus SSB protein dynamics on single-stranded DNA.
+  year: 2013
+  publisher: Nucleic Acids Research
+  page: 42, 3821-3832
+  type: 0
+
+- author: SR Wessel, AH Marceau, SC Massoni, R Zhou, T Ha, SJ Sandler and JL Keck.
+  title: PriC-mediated DNA replication restart requires PriC complex formation with the single-stranded DNA-binding protein.
+  year: 2013
+  publisher: publisher of Biological Chemistry
+  page: 288, 17569-17578
+  type: 0
+
+- author: SH Yang, R Zhou, J Campbell, J Chen, T Ha, and TT Paull.
+  title: The SOSS1 single-stranded DNA binding complex promotes DNA end resection in concert with Exo1.
+  year: 2013
+  publisher: EMBO publisher
+  page: 32, 126-132
+  type: 0
+
+- author: NF Lue, R Zhou, L Chico, N Mao, O Steinberg-Neifach and T Ha.
+  title: The Telomere Capping Complex CST Has an Unusual Stoichiometry, Makes Multipartite Interaction with G-Tails, and Unfolds Higher-Order G-Tail Structures.
+  year: 2013
+  publisher: PLoS Genetics
+  page: 9, e1003145
+  type: 0
+
+- author: R Zhou, T Ha.
+  title: Single molecule analysis of SSB dynamics on DNA.
+  year: 2012
+  publisher: Methods in Molecular Biology
+  page: 922, 85-100
+  type: 0
+
+- author: MD Brenner, R Zhou, and T Ha.
+  title: "Forcing a connection: Impacts of single-molecule force spectroscopy on in vivo tension sensing."
+  year: 2011
+  publisher: Biopolymers
+  page: 95, 332-344
+  type: 0
+
+- author: R Zhou, M Schlierf, and T Ha.
+  title: Fluorescence-force spectroscopy at the single molecule level.
+  year: 2010
+  publisher: Methods in Enzymology
+  page: 475C, 405-426
+  type: 0
+
+# Format:
+# - author:
+#   title:
+#   year:
+#   publisher:
+#   page:
+#   type:
