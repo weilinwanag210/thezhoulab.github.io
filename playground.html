@@ -1,6 +1,6 @@
 ---
 permalink: /playground
-layout: default
+layout: particle_bg
 ---
 
 <style type="text/css" media="screen">
@@ -69,12 +69,12 @@ layout: default
 </script>
 <style type="text/css">
 [aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
+  width: 0;
+  transition-property: width;
 }
 
 [aos="fade"].aos-animate {
-  opacity: 1;
+  width: 500px;
 }
 
 body {
@@ -104,16 +104,16 @@ body {
 }
 
 .proj {
-  width: 400px;
-  height: 500px;
+  width: 1200px;
+  height: fit-content;
   margin: 50px auto;
-  padding-top: 75px;
+  padding: 20px 40px;
   background: #ccc;
-  text-align: center;
+  text-align: left;
   color: #FFF;
-  font-size: 3em;
+  font-size: 16px;
   position: fixed;
-  top: 0;
+  top: 50%;
   bottom: 0;
   margin: auto;
   left: 20px;
@@ -130,27 +130,31 @@ body {
   z-index: 2;
   background: #16a085;
 }
+
+
 </style>
 
 <div class="proj proj-0"
      data-aos="fade-left"
      data-aos-anchor="#trig-0">
-  Topic 1:
-  <span>MPS Cytoskeleton</span>
+  <h4>Project 1. Role of phase separation in cancer and neurodegenerative diseases. </h4>
+  <p>Phase separation of biomolecules, leading to the formation of assemblies with distinct material properties, has recently emerged as a new paradigm underlying subcellular compart-mentalization in a broad spectrum of biological processes, such as cell signaling, RNA processing, chromatin organization, transcription, and synapse assembly. Understanding how phase separation is dysregulated in diseases is hence of paramount importance.</p>
+ 
 </div>
 
 <div class="proj proj-1"
      data-aos="fade-left"
      data-aos-anchor="#trig-1">
-  Topic 2:
-  <span>Liquid-Liquid Phase Separatioin</span>
+  <h4>Project 2. Subcellular compartmentalization of signaling proteins mediated by membrane skeleton. </h4>
+  <p>Elucidating how mammalian cells spatially organize and coordinate signaling molecules for cell signaling is critical because
+numerous diseases, notably neurodegenerative diseases and cancer, stem from cell signaling defects. Our current understanding holds that, in response to an external stimulus, different types of membrane proteins interact with each other at the cell membrane to trigger a chain of signaling events that carries the signal to the cell interior. Recent studies, including my postdoc work(9), suggest that cells achieve this by compartmentalizing signaling molecules into distinct nano- to micro-sized subcellular compartments to facilitate the molecular interactions required for downstream signaling. My post doc work showed that in neurons, this process can be mediated by the MPS(9), which can provide multivalent interaction sites to recruit signaling molecules (Fig.1), such as GPCRs, CAMs, RTKs and Src family kinases (SFKs), to membrane domains. Such MPS-dependent formation of signaling domains is required for downstream ERK signaling.</p>
 </div>
 
 <div class="proj proj-2"
      data-aos="fade-left"
      data-aos-anchor="#trig-2">
-  Topic 3:
-  <span>Signalosome</span>
+  <h4>Project 3. Regulation and function of local RNA degradation at the transcriptome scale.</h4>
+  <p>Because both cancer and neurodegenerative diseases have been linked to aberrant RNA homeostasis where the related  RNA-protein interactions are often organized into RNA granules (26), I plan to extend my research to studying local RNA decay. In response to environmental changes, RNA homeostasis is dynamically modulated, and tight regulation of RNA abundance through RNA decay determines the amount, timing, and location of protein translation. In the same cell, RNA half-lives for different genes can vary drastically from minutes to days, indicating the existence of complex regulatory networks mediating RNA decay. Two major decay pathways have been described: (1) Exoribonuclease (Xrn1)-mediated 5' to 3' decay following deadenylation and decapping, and (2) exosome-mediated 3' to 5' decay following deadenylation without decapping. In specialized and quality control pathways such as nonsense mediated decay (a decay pathway known to locally regulate axon guidance (27)), decay can also be initiated by endonucleolytic cleavage. However, due to the technical challenge of directly visualizing mRNA decay in vivo, it is largely elusive whether and how RNA lifetimes and different decay pathways are differentially regulated across different compartments of polarized cells such as neurons, and how this locally regulated RNA decay is linked to normal cell functions and diseases. I plan to develop novel methods to visualize local RNA decay, and use neurons as a model system to elucidate the regulation and function of RNA decay in axons and dendrites</p>
 </div>
 
 <div class="item"  style="background-image:url(assets/images/t0.png)" id="trig-0"></div>

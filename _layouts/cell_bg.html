@@ -25,16 +25,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    <div>
     {% include header.html %}
     {{ content }}
-  </div>
-  </body>
-  <footer>
     {% include footer.html %}
-  </footer>
+  </body>
+  
 </html>
+<script src="assets/js/three.min.js"></script>
+<script src="assets/js/vanta.cells.min.js"></script>
+<script>
+VANTA.CELLS({
+  el: "#cell",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  color1: 0xffffff,
+  speed: 2.40,
+  color2: 0x788fa4
+})
+</script>

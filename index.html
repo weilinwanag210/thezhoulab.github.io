@@ -9,6 +9,7 @@ layout: default
     background-color: rgba(0,0,0,0.6);
     color: white;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 300px 50px 20px 20px;
     border-radius: 30px;
     font-size: 30px;
@@ -16,9 +17,11 @@ layout: default
   html{
 		background-image: url('/assets/images/bg.jpg');
 		background-repeat: no-repeat;
-		background-size: 120% auto;
+		background-size: calc(max(110%, 1200px)) auto;
+    background-attachment: fixed;
 		color: white;
   }
+
   body{
   	background-color: transparent;
   }
