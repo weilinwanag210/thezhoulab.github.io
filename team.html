@@ -13,7 +13,7 @@ layout: particle_bg
       {% assign members = position[1] | sort: 'name' %}
     	{% for member in members %}
 	    	<div id="member">
-	    		<img class="avatar" src=/assets/images/{{ member.img}}>
+	    		<img class="avatar" src=/assets/images/team/{{member.img}}>
 	    		<div id="member-inf">
 		      	<h2>{{ member.name }}</h2>
 		      	{% assign edus = member.education | split: "/" %}

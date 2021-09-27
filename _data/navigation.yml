@@ -4,15 +4,15 @@
   link: /about
 - name: Publications
   link: /publications
+- name: Research
+  link: /research
 - name: News
   link: /news
 - name: Team
   link: /team
 - name: Join Us
   link: /joinus
-- name: Play
-  link: /playground
 
 
-# - name: Contact
-#   link: /contact
+# - name: Play
+#   link: /playground

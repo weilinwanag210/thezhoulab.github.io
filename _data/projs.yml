@@ -1,0 +1,24 @@
+- title: Project 1. Role of phase separation in cancer and neurodegenerative diseases.
+  description: Phase separation of biomolecules, leading to the formation of assemblies with distinct material properties, has recently emerged as a new paradigm underlying subcellular compart-mentalization in a broad spectrum of biological processes, such as cell signaling, RNA processing, chromatin organization, transcription, and synapse assembly. Understanding how phase separation is dysregulated in diseases is hence of paramount importance.
+  img:
+    - path: phase_separation.png
+      description: "source: https://bioscope.ucdavis.edu/2019/11/06/its-not-just-a-phase-separation/"
+    - path: ps.png
+      description: Interdisciplinary approaches to study the role of phase separation in cancer cell.
+    - path: ps2.png
+      description: Interdisciplinary approaches to study aggregation in neurodegenerative diseases mediated by phase separation.
+- title: Project 2. Subcellular compartmentalization of signaling proteins mediated by membrane skeleton.
+  description: Elucidating how mammalian cells spatially organize and coordinate signaling molecules for cell signaling is critical because numerous diseases, notably neurodegenerative diseases and cancer, stem from cell signaling defects. Our current understanding holds that, in response to an external stimulus, different types of membrane proteins interact with each other at the cell membrane to trigger a chain of signaling events that carries the signal to the cell interior. Recent studies, including my postdoc work(9), suggest that cells achieve this by compartmentalizing signaling molecules into distinct nano- to micro-sized subcellular compartments to facilitate the molecular interactions required for downstream signaling. My post doc work showed that in neurons, this process can be mediated by the MPS(9), which can provide multivalent interaction sites to recruit signaling molecules (Fig.1), such as GPCRs, CAMs, RTKs and Src family kinases (SFKs), to membrane domains. Such MPS-dependent formation of signaling domains is required for downstream ERK signaling.
+  img:
+    - path: 1dmps.jpg
+      description: "source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3815867/"
+    - path: 2dmps.jpg
+      description: 
+    - path: mps.png
+      description: MPS-mediated subcellular compartmentalization of signaling molecules at cell surface.
+
+- title: Project 3. Regulation and function of local RNA degradation at the transcriptome scale.
+  description: "Because both cancer and neurodegenerative diseases have been linked to aberrant RNA homeostasis where the related  RNA-protein interactions are often organized into RNA granules (26), I plan to extend my research to studying local RNA decay. In response to environmental changes, RNA homeostasis is dynamically modulated, and tight regulation of RNA abundance through RNA decay determines the amount, timing, and location of protein translation. In the same cell, RNA half-lives for different genes can vary drastically from minutes to days, indicating the existence of complex regulatory networks mediating RNA decay. Two major decay pathways have been described: (1) Exoribonuclease (Xrn1)-mediated 5' to 3' decay following deadenylation and decapping, and (2) exosome-mediated 3' to 5' decay following deadenylation without decapping. In specialized and quality control pathways such as nonsense mediated decay (a decay pathway known to locally regulate axon guidance (27)), decay can also be initiated by endonucleolytic cleavage. However, due to the technical challenge of directly visualizing mRNA decay in vivo, it is largely elusive whether and how RNA lifetimes and different decay pathways are differentially regulated across different compartments of polarized cells such as neurons, and how this locally regulated RNA decay is linked to normal cell functions and diseases. I plan to develop novel methods to visualize local RNA decay, and use neurons as a model system to elucidate the regulation and function of RNA decay in axons and dendrites."
+  img:
+    - path: rna.png
+      description: Approaches to study local RNA degradation in neurons.

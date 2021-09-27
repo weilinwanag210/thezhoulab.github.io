@@ -9,6 +9,7 @@
 #nav {
 	max-width: 1000px;
 	height: 40px;
+  margin-bottom: 20px;
 }
 
 #nav ul {
@@ -203,4 +204,56 @@ canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container
 
 body{
   margin:0
+}
+
+#pub_img{
+  position: relative;
+  right: 40px;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin-right: 30px;
+  transition: transform .2s;
+
+}
+
+#pub_img:hover{
+  transform: scale(2);
+  z-index: 10;
+}
+
+#pub{
+  height: 120px;
+  position: inline-flex;
+  margin-bottom: 20px;
+}
+
+#pub_left{
+  float: left;
+  width: 860px;
+}
+#pub_right{
+  float: right;
+  width: 80px;
+}
+
+#pub_background{
+  z-index: -1;
+  height: 120px;
+  overflow-y: clip;
+}
+
+
+#pub_background img{
+  width: 1000px;
+
+}
+
+#pub_left::before{
+  opacity:0.3;
+}
+
+#pub a{
+  padding: 0;
+  text-align: left;
 }

@@ -1,0 +1,24 @@
+
+{% assign proj_id=0 %}
+{% for proj in projs: %}
+     <div class="proj proj-{{proj_id}}"
+          data-aos="fade-left"
+          data-aos-anchor="#trig-{{proj_id}}">
+       <h4>{{proj.title}}</h4>
+       <p>{{proj.description}}</p>
+     </div>
+     {% assign proj_id = proj_id | plus: 1 %}
+{% endfor %}
+
+{% assign proj_id=0 %}
+{% for proj in projs: %}
+          <div id="trig-{{proj_id}}"></div>
+     {% for img in proj.img %}
+          <div class="item"  style="margin-top: 50px; margin-bottom: 100px; background-color: white"><img class="proj_img" src="assets/images/projs/{{img.path}}" style="width:1000px;">
+          {% if img.description %}
+               <span style="float: right">{{img.description}}</span>
+          {% endif %}
+          </div>
+     {% endfor %}
+     {% assign proj_id = proj_id | plus: 1 %}
+{% endfor%}
