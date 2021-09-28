@@ -1,7 +1,7 @@
 - author: R Zhou, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang.
   title: Proteomic and functional analyses of the periodic membrane skeleton in neurons.
   year: 2020
-  img: proteomic.jpg
+  img: rxiv.jpg
   publisher: (Submitted) BioRxiv
   link: https://www.biorxiv.org/content/10.1101/2020.12.23.424206v1
   type: 1
@@ -13,7 +13,7 @@
   link: https://www.science.org/doi/10.1126/science.aaw5937
   publisher: Science
   page: 365, 929-934
-  img: mps.jpg
+  img: rtk.jpeg
   highlight: 
     publisher: Nature Reviews Neuroscience
     title: A platform for coordinated signalling
@@ -50,7 +50,7 @@
   year: 2017
   type: 1
   link: https://www.pnas.org/content/114/32/E6678
-  img: structure.jpg
+  img: structure.png
   publisher: PNAS
   page: 114,6678-6685
 
@@ -67,7 +67,7 @@
   title: Prevalent presence of periodic actin-spectrin-based membrane skeleton in a broad range of neuronal cell types and animal species.
   year: 2016
   link: https://www.pnas.org/content/113/21/6029.long
-  img: prevalent.jpg
+  img: prevalent.png
   publisher: PNAS
   page: 113, 6029-6034
   type: 1
@@ -79,7 +79,7 @@
   page: 146, 222-232
   type: 1
   link: https://www.cell.com/fulltext/S0092-8674(11)00711-2
-  img: ssb.jpg
+  img: ssb.jpeg
   selected: 
     description: the Cell PaperFlick (video) of the issue (Watch on Youtube)
     link: https://www.youtube.com/watch?v=lmSGR37c0Fc
@@ -91,7 +91,7 @@
   page: 160, 1135-1144
   type: 1
   link: https://www.sciencedirect.com/science/article/pii/S0092867415001348
-  img: asymmetric.jpg
+  img: asymmetric.jpeg
   highlight:
     title: A Molecular Take on Aesop’s The Oak and the Reeds.
     publisher: Cell
@@ -106,7 +106,7 @@
   page: 3, e02190
   type: 1
   link: https://elifesciences.org/articles/02190
-  img: periodic.webp
+  img: periodic.jpeg
   highlight:
     title: "DNA Helicases: Molecular watchdogs on genome patrol"
     page: 3, e02854
@@ -119,7 +119,7 @@
   year: 2011
   publisher: Nano Letters
   link: https://pubs.acs.org/doi/abs/10.1021/nl2032876
-  img: detect.gif
+  img: detect.png
   page: 11, 5482-5488
   type: 1
 
@@ -129,7 +129,7 @@
   publisher: Nature
   page: 466, 263–266
   link: https://www.nature.com/articles/nature09198
-  img: measure.webp
+  img: measure.png
   type: 1
   highlight: 
     title: Sensing tension
@@ -144,7 +144,7 @@
   publisher: Science
   page: 318, 279-283
   link: https://www.science.org/doi/10.1126/science.1146113
-  img: fluorescence.jpeg
+  img: fluorescence.png
   type: 1
   highlight:
     title: "Fluorescence-force spectroscopy: watch your tether"
@@ -207,7 +207,7 @@
 - author: SH Yang, R Zhou, J Campbell, J Chen, T Ha, and TT Paull.
   title: The SOSS1 single-stranded DNA binding complex promotes DNA end resection in concert with Exo1.
   year: 2013
-  publisher: EMBO publisher
+  publisher: EMBO Journal
   page: 32, 126-132
   type: 0
 

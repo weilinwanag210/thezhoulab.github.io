@@ -1,15 +1,19 @@
 - name: Home
   link: /
-- name: About
-  link: /about
-- name: Publications
-  link: /publications
-- name: Research
-  link: /research
 - name: News
   link: /news
+- name: Publications
+  link: /pubs
+- name: Research
+  link: /research
+- name: Education
+  link: /education
 - name: Team
-  link: /team
+  subs:
+    - name: Dr. Zhou
+      link: /about
+    - name: Lab Members
+      link: /team
 - name: Join Us
   link: /joinus
 
