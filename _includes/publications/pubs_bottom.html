@@ -1,20 +1,9 @@
 {% assign background=0 %}
 <div id="pubs">
 {%- for pub in pubs: -%}
-  <div class="pub" {% unless {{pub.img}} %} style="height: 100px; margin-bottom: -5px" {% endunless %}>    
+  <div class="pub" style="height: auto;">    
     
-    {% if pub.img %}
-    <div class="pub_left_img">
-    {% if background == 1 %}
-    <div class="pub_background">
-    <img src=assets/images/pubs/{{pub.img}}>
-    </div>
-    {% else %}   
-    <img class="pub_img" src=assets/images/pubs/{{pub.img}}>
-    </div>
-    {% endif %}
-    {% endif %}
-    <div class="pub_right_text" {% unless {{pub.img}} %} style="width: 1000px;" {% endunless %}>
+    <div class="pub_text" style="width: 1000px;" >
     
       <p style="margin-top: 0;"><a href={{pub.link}}><span>{{pub_num}}. {{pub.title}}</span></a></p>
       {% assign other_author = pub.author | split: author %}
@@ -26,6 +15,18 @@
 
       {% if pub.selected %}
       <p style="font-size: 10px"><a href={{pub.selected.link}}>Selected as: <span style="font-style: italic; font-weight: bold;">{{pub.selected.description}} </a></span></p>
+      {% endif %}
+
+      {% if pub.img %}
+        <div class="pub_img_bottom">
+        {% if background == 1 %}
+          <div class="pub_background">
+          <img src=assets/images/pubs/{{pub.img}}>
+          </div>
+        {% else %}   
+          <img class="pub_img" src=assets/images/pubs/{{pub.img}}>
+          </div>
+        {% endif %}
       {% endif %}
     </div>
 
