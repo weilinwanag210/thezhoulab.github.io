@@ -1,52 +1,10 @@
-<!doctype html>
-<html {% if page.html_class %} id="{{ page.html_class }}"{% endif %}>
-  <head>
-    {% if site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
+---
+layout: base
+---
 
 
-    <meta charset="utf-8">
-    {% if page.title %}
-    {% assign title_now = page.title | escape %}
-    {% else %}
-    {% assign title_now = site.title | escape %}
-    {% endif %}
-
-    <title>{{ title_now }}</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon_mic.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-  </body>
-  
-</html>
-<script src="assets/js/three.min.js"></script>
-<script src="assets/js/vanta.cells.min.js"></script>
-<script>
-VANTA.CELLS({
-  el: "#cell",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  color1: 0xffffff,
-  speed: 2.40,
-  color2: 0x788fa4
-})
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.cells.min.js"></script>
+<script> VANTA.CELLS({ el: "#cell_bg", mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200.00, minWidth: 200.00, scale: 1.00,
+color1: 0x0, color2: 0xbbbbbb, size: 2.20, speed: 0.70 }) </script>
+{{ content }}

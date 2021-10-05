@@ -1,29 +1,37 @@
+<style type="text/css">
+  .hvr-hang: hover{
+    background-color: white;
+  }
+  a::before{
+    background: none;
+  }
+</style>
 <div id="nav">
   <ul>
   {% for item in site.data.navigation %}
     <li>
     {% if item.subs %}
     <div class="dropdown">
-      <a class="hvr-underline-from-center" {% for sub in item.subs %}
+      <a class="hvr-skew" {% for sub in item.subs %}
         {% if page.url == sub.link %} id="nav-current" {% endif %}
       {% endfor %} href="#"> {{item.name}} </a>
-      
+
       <div class="dropsub">
         {% for sub in item.subs %}
-          <a class=hvr-underline-from-center href="{{ sub.link }}" > 
+          <a class=hvr-skew href="{{ sub.link }}" > 
             {{ sub.name }}
           </a>
         {% endfor %}
       </div>
     </div>
     {% else%}
-    <a class=hvr-underline-from-center href="{{ item.link }}" {% if page.url == item.link %}id="nav-current"{% endif %}>
+    <a class=hvr-skew href="{{ item.link }}" {% if page.url == item.link %}id="nav-current"{% endif %}>
       {{ item.name }}
     </a>
     {% endif %}
     </li>
   {% endfor %}
   </ul>
-</div>
 
+</div>
 <!-- TODO: add dropdown symbol here -->

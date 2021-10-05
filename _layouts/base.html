@@ -1,5 +1,5 @@
 <!doctype html>
-<html {% if page.html_class %} id="{{ page.html_class }}"{% endif %}>
+<html id="{{ page.layout }}">
   <head>
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -27,11 +27,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/hover-min.css">
   </head>
   <body>
     <div style="min-height: 100vh;">
     {% include header.html %}
+    <div style="padding-top: 150px;">
     {{ content }}
+    </div>
   </div>
   </body>
   <footer>

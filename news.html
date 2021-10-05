@@ -1,12 +1,13 @@
 ---
 title: Zhou Lab
 lab_name: Zhou Lab @ PSU
-layout: particle_bg
+layout: particles-js
+permalink: /news
 ---
 
 
 <h1>News</h1>
-	{% assign news = site.data.news | sort: 'time' %}
+	{% assign news = site.data.news | sort: 'time' | reverse %}
   {% for t in news %}
     <div id="news">
       <h2> {{t.time}} </h2>

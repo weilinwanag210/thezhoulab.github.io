@@ -1,14 +1,59 @@
 ---
 permalink: /research
-layout: particle_bg
+layout: particles-js
 ---
 
-<div id="outline">
+<style type="text/css">
+  #outline-nav{
+    position: fixed;
+    float: left;
+    width: 255px;
+    display: inline-block;
+    font-family: proxima-nova;
+    border: solid #777;
+
+  }
+  #outline-nav ul{
+    list-style: none;
+    padding: 0;
+  }
+  #outline-nav a{
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #outline-nav a:hover{
+    color: #fff;
+  }
+  #outline-nav a{
+    color: #777;
+  }
+  #outline-nav-current{
+    color: #fff;
+  }
+  #r-content{
+    margin-left: calc(255px - 0% + 10px);
+    width: calc(80vw - 255px);
+    display: inline-block;
+    vertical-align: top;
+    border: solid #777;
+  }
+</style>
+<div style="display: block;">
+<div id="outline-nav">
   <h2><a href="/research">Projects</a></h2>
-  <a href="/srm">Super-resolution imaging of cellular structures</a>
-  <a href="/ps">Phase separation in human diseases</a>
-  <a href="/trans">Transcriptom-scale imaging</a>
+  <ul>
+    <li><a {% if page.url == item.link %} id="outline-nav-current"{% endif %} href="/srm">1. Super-resolution imaging of cellular structures</a></li>
+    <li><a href="/ps">2. Phase separation in human diseases</a></li>
+    <li><a href="/trans">3. Transcriptom-scale imaging</a></li>
+  </ul>
+  
 </div>
 <div id="r-content">
-  
+  mimeiemie
+</div>
 </div>
