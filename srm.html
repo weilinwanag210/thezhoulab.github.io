@@ -1,0 +1,113 @@
+---
+permalink: /srm
+layout: research-sub
+---
+
+
+<style type="text/css" media="screen">
+:root {
+  --border: 2px;
+  --slider-width: calc( max(var(--body-ratio) - 255px, 500px));
+  --slider-height: calc(0.23 * var(--slider-width));
+}
+
+.compare {
+  position: relative;
+  height: var(--slider-height);
+  width: var(--slider-width);
+}
+
+.compare_overlay {
+  position: absolute;
+  height: var(--slider-height);
+  width: var(--slider-width);
+  border-radius: 0rem;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+
+.cmp_img img {
+  height: var(--slider-height);
+  width: var(--slider-width);
+  object-fit: cover;
+  float: left;
+}
+none .cmp_img img{
+  border: solid var(--border) var(--theme);
+}
+none .compare_overlay{
+  border-right: solid var(--border) var(--theme);
+}
+.compare_slider {
+  position: absolute;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  background: var(--theme);
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.1rem 0.8rem rgba(255,255,255, 0.8);
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.2s;
+}
+
+.compare_slider:active {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+}
+</style>
+
+
+
+<p> Drag the bar below to compare the resolution between an conventional image(left) and STORM image(right) of the actin cytoskeleton in a mouse neuron cell</p>
+<div class="compare">
+  <div class="cmp_img">
+    <img src="/assets/images/projs/srm1.png">
+  </div>
+  <div class="cmp_img compare_overlay">
+    <img src="/assets/images/projs/srm0.png">
+  </div>
+</div>
+
+<script type="text/javascript">
+  let isClicked = false;
+const image = document.querySelector(".compare_overlay");
+const width = image.offsetWidth;
+const height = image.offsetHeight;
+const slider = document.createElement("div");
+compare();
+function compare() {
+  image.parentElement.insertBefore(slider, image);
+  slider.classList.add("compare_slider");
+  slider.style.top = height / 2 - slider.offsetHeight / 2 + "px";
+  slider.style.left = width / 2 - slider.offsetWidth / 2 + "px";
+  image.style.width = "50%";
+  slider.addEventListener("mousedown", onSlideStart);
+  slider.addEventListener("touchstart", onSlideStart);
+  window.addEventListener("mouseup", () => (isClicked = false));
+  window.addEventListener("touchstop", () => (isClicked = false));
+  window.addEventListener("mousemove", onSlideMove);
+  window.addEventListener("touchmove", onSlideMove);
+}
+function onSlideStart(event) {
+  event.preventDefault();
+  isClicked = true;
+}
+function onSlideMove(event) {
+  if (!isClicked) return;
+  doSlide(currentPosition(event));
+}
+function currentPosition(event = window.event) {
+  let xImage = image.getBoundingClientRect();
+  let x = 0;
+  x = event.pageX - xImage.left;
+  if (x < 0) x = 0;
+  if (x > width) x = width;
+  return x;
+}
+function doSlide(x) {
+  image.style.width = x + "px";
+  slider.style.left = image.offsetWidth - slider.offsetWidth / 2 + "px";
+}
+</script>

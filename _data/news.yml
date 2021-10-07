@@ -1,7 +1,15 @@
 - time: 2021/05
   content: Dr. Zhou became affiliated with Department of Biomedical Engineering and Huck Institutes of the Life Sciences
+  links:
+    - text: Department of Biomedical Engineering
+      link: https://www.bme.psu.edu/
+    - text: Huck Institutes of the Life Sciences
+      link: https://www.huck.psu.edu/
 - time: 2021/03
   content: We are hiring at all levels! Please check our webpage for more details
+  links:
+    - text: webpage
+      link: /joinus
 - time: 2021/10
   content: Our new lab website is online!
 - time: 2021/05
@@ -14,3 +22,6 @@
   content: We're thrilled to have Bobby at our office! Welcome aboard! 
 - time: 2021/08
   content: Congratulations to Dr. Zhou! The lab is officially NIH funded! Super excited and grateful to receive support for the next 5 years through the R35!
+  links:
+    - text: R35
+      link: https://twitter.com/RuoboZhou/status/1430379110908502016

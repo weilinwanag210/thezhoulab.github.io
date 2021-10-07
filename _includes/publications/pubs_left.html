@@ -14,7 +14,7 @@
     </div>
     {% endif %}
     {% endif %}
-    <div class="pub_right_text" {% unless {{pub.img}} %} style="width: 1000px;" {% endunless %}>
+    <div class="pub_right_text" {% unless {{pub.img}} %} style="float:  left; min-width: 600px;" {% endunless %}>
     
       <p style="margin-top: 0;"><a href={{pub.link}}><span>{{pub_num}}. {{pub.title}}</span></a></p>
       {% assign other_author = pub.author | split: author %}

@@ -11,6 +11,19 @@ permalink: /news
   {% for t in news %}
     <div id="news">
       <h2> {{t.time}} </h2>
-      <p> {{t.content}} </p>
+      <p> 
+      {% if t.links %}         
+        {% assign temp = t.content %}
+        {% for x in t.links %}
+          {% assign left = temp | split: x.text %}
+          <span> {{left[0]}} </span>
+          <a href="{{x.link}}">{{x.text}}</a>
+          {% assign temp = left[1] %}
+        {% endfor%}
+        <span> {{left[1]}} </span>
+      {% else %}
+        {{t.content}} 
+      {% endif %}
+      </p>
     </div>
   {% endfor %}

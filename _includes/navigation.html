@@ -2,19 +2,19 @@
   .hvr-hang: hover{
     background-color: white;
   }
-  a::before{
+  #nav a::before{
     background: none;
   }
 </style>
 <div id="nav">
   <ul>
   {% for item in site.data.navigation %}
-    <li>
+    <li {% if page.url == item.link %}id="nav-current"{% endif %} {% for sub in item.subs %}
+        {% if page.url == sub.link %} id="nav-current" {% endif %}
+      {% endfor %}>
     {% if item.subs %}
     <div class="dropdown">
-      <a class="hvr-skew" {% for sub in item.subs %}
-        {% if page.url == sub.link %} id="nav-current" {% endif %}
-      {% endfor %} href="#"> {{item.name}} </a>
+      <a class="hvr-skew"  href="#"> {{item.name}} </a>
 
       <div class="dropsub">
         {% for sub in item.subs %}
@@ -25,7 +25,7 @@
       </div>
     </div>
     {% else%}
-    <a class=hvr-skew href="{{ item.link }}" {% if page.url == item.link %}id="nav-current"{% endif %}>
+    <a class=hvr-skew href="{{ item.link }}" >
       {{ item.name }}
     </a>
     {% endif %}

@@ -7,4 +7,15 @@ layout: base
 <script> VANTA.CLOUDS({ el: "#cloud_bg",
 mouseControls: true, touchControls: true, gyroControls: false, minHeight: 200.00, minWidth: 200.00, backgroundColor: 0x0, skyColor: 0x4559be, cloudColor: 0x9899b6, cloudShadowColor: 0x8891e3, sunColor: 0xffda3a, sunGlareColor: 0xffbb44, sunlightColor: 0xfaab03,
 speed: 0.30 }) </script>
+<canvas class="vanta-canvas"></canvas>
 {{ content }}
+
+<style type="text/css">
+    #content p,#content a,#content h1,#content b{
+        color: black !important;
+    }
+    #content p {
+    /* This value is the OPPOSITE color of our background */
+    mix-blend-mode: difference;
+}
+</style>
