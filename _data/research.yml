@@ -3,19 +3,19 @@
   description: Elucidating how mammalian cells spatially organize and coordinate signaling molecules for cell signaling is critical because numerous diseases, notably neurodegenerative diseases and cancer, stem from cell signaling defects. Our current understanding holds that, in response to an external stimulus, different types of membrane proteins interact with each other at the cell membrane to trigger a chain of signaling events that carries the signal to the cell interior. Recent studies, including my postdoc work(9), suggest that cells achieve this by compartmentalizing signaling molecules into distinct nano- to micro-sized subcellular compartments to facilitate the molecular interactions required for downstream signaling. My post doc work showed that in neurons, this process can be mediated by the MPS(9), which can provide multivalent interaction sites to recruit signaling molecules (Fig.1), such as GPCRs, CAMs, RTKs and Src family kinases (SFKs), to membrane domains. Such MPS-dependent formation of signaling domains is required for downstream ERK signaling.
   imgs:
     - path: soma1.png
-      description: 
+      description: 2D lattice-like, actin-spectrin based membrane skeleton in the cell body of neurons, discovered by super resolution imaging
     - path: mps0.png
-      description:
-    - path: mps1.png
-      description: 
+      description: 1D periodic, actin-spectrin based cytoskeleton in axons, discovered by super-resolution imaging
+    - path: mps1_spectrin.png
+      description: 1D periodic, actin-spectrin based cytoskeleton in dendrites, discovered by super resolution imaging
     - path: microtube0.png
-      description: 
+      description: Super-res image of microtubules in mammalian cells
     - path: microtube1.png
-      description: 
+      description: Super-res image of microtubules in mammalian cells
     - path: actin0.png
-      description: 
+      description: Super-res image of actin filaments in mammalian cells
     - path: actin1.png
-      description: 
+      description: Super-res image of microtubules in mammalian cells
 
 - link: /ps
   title: Phase separation in human diseases

@@ -28,10 +28,15 @@ layout: research-sub
 }
 
 .cmp_img img {
-  height: var(--slider-height);
-  width: var(--slider-width);
+  height: var(--slider-height) !important;
+  width: var(--slider-width) !important;
+  margin: 0 !important;
   object-fit: cover;
   float: left;
+}
+
+.compare_overlay, .cmp_img img{
+  border:  solid 1px var(--theme);
 }
 none .cmp_img img{
   border: solid var(--border) var(--theme);

@@ -27,7 +27,9 @@ layout: base
   {{content}}
   {% if current_res.imgs%}
     {% for img in current_res.imgs%}
+    <p>{{img.description}} ↓ </p>
     <img {% if img.width %} style="width: {{img.width}}" {% endif %} src="/assets/images/projs{{page.url}}/{{img.path}}">
+    <p></p>
     {% endfor %}
   {% endif %}
 </div>
