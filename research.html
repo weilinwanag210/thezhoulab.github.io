@@ -3,23 +3,180 @@ permalink: /research
 layout: black
 ---
 
+<style type="text/css" media="screen">
+:root {
+  --border: 2px;
+  --slider-width: calc( max(var(--body-ratio) - 255px, 500px));
+  --slider-height: calc(0.23 * var(--slider-width));
+}
+
+.compare {
+  position: relative;
+  height: var(--slider-height);
+  width: var(--slider-width);
+}
+
+.compare_overlay {
+  position: absolute;
+  height: var(--slider-height);
+  width: var(--slider-width);
+  border-radius: 0rem;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+
+.cmp_img img {
+  height: var(--slider-height) !important;
+  width: var(--slider-width) !important;
+  margin: 0 !important;
+  object-fit: cover;
+  float: left;
+}
+
+.compare_overlay, .cmp_img img{
+  border:  solid 1px var(--theme);
+}
+none .cmp_img img{
+  border: solid var(--border) var(--theme);
+}
+none .compare_overlay{
+  border-right: solid var(--border) var(--theme);
+}
+.compare_slider {
+  position: absolute;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  background: var(--theme);
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.1rem 0.8rem rgba(255,255,255, 0.8);
+  border-radius: 50%;
+  cursor: grab;
+  transition: border-color 0.2s;
+}
+
+.compare_slider:active {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+.active, .collapsible:hover, .active a{
+  color: white !important;
+}
+
+#r-content h1{
+  margin-top: 2em;
+}
+
+#r-content p{
+  margin-top: 2em;
+  margin-bottom: .5em;
+}
+</style>
 
 <div style="display: block;">
 <div id="outline-nav">
   {% assign research = "/research" %}
-  <h2><a {% if page.url == research %} id="outline-nav-current"{% endif %} href="/research">Projects</a></h2>
+  <h2 class="collapsible" ><a style="color: white;" href="#research">Projects</a></h2>
   <ul>
   {% for item in site.data.research %}
-    <li><a {% if page.url == item.link %} id="outline-nav-current"{% endif %} href={{item.link}}>{{item.title}}</a></li>
+    <li class="collapsible" ><a href="#{{item.link}}">{{item.title}}</a></li>
+    <div style="display: none"> <p> content </p></div>
   {% endfor %}
   </ul>
   
 </div>
 <div id="r-content">
-  {% if current_res.imgs%}
-    {% for img in current_res.imgs%}
-    <img src="/assets/images/projs/{{img.path}}">
-    {% endfor %}
-  {% endif %}
+  {% assign current=site.data.research[0] %}
+  <div class="anchor" id={{current.link}}>
+</div>
+    <h1>{{current.title}}</h1>
+  <p> Drag the bar below to compare the resolution between an conventional image(left) and STORM image(right) of the actin cytoskeleton in a mouse neuron cell</p>
+  <div class="compare">
+    <div class="cmp_img">
+      <img src="/assets/images/projs/srm1.png">
+    </div>
+    <div class="cmp_img compare_overlay">
+      <img src="/assets/images/projs/srm0.png">
+    </div>
+  </div>
+  {% include research_img.html %}
+  {% assign current=site.data.research[1] %}
+  <div class="anchor" id={{current.link}}>
+  </div>
+    <h1>{{current.title}}</h1>
+    {% include research_img.html %}
+
+  {% assign current=site.data.research[2] %}
+  <div class="anchor" id={{current.link}}>
+  </div>
+    <h1>{{current.title}}</h1>
+    {% include research_img.html %}
+
 </div>
 </div>
+
+<script type="text/javascript">
+  let isClicked = false;
+const image = document.querySelector(".compare_overlay");
+const width = image.offsetWidth;
+const height = image.offsetHeight;
+const slider = document.createElement("div");
+compare();
+function compare() {
+  image.parentElement.insertBefore(slider, image);
+  slider.classList.add("compare_slider");
+  slider.style.top = height / 2 - slider.offsetHeight / 2 + "px";
+  slider.style.left = width / 2 - slider.offsetWidth / 2 + "px";
+  image.style.width = "50%";
+  slider.addEventListener("mousedown", onSlideStart);
+  slider.addEventListener("touchstart", onSlideStart);
+  window.addEventListener("mouseup", () => (isClicked = false));
+  window.addEventListener("touchstop", () => (isClicked = false));
+  window.addEventListener("mousemove", onSlideMove);
+  window.addEventListener("touchmove", onSlideMove);
+}
+function onSlideStart(event) {
+  event.preventDefault();
+  isClicked = true;
+}
+function onSlideMove(event) {
+  if (!isClicked) return;
+  doSlide(currentPosition(event));
+}
+function currentPosition(event = window.event) {
+  let xImage = image.getBoundingClientRect();
+  let x = 0;
+  x = event.pageX - xImage.left;
+  if (x < 0) x = 0;
+  if (x > width) x = width;
+  return x;
+}
+function doSlide(x) {
+  image.style.width = x + "px";
+  slider.style.left = image.offsetWidth - slider.offsetWidth / 2 + "px";
+}
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
