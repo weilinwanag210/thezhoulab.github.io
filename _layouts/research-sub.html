@@ -18,7 +18,7 @@ layout: base
   <h2><a {% if page.url == research %} id="outline-nav-current"{% endif %} href="/research">Projects</a></h2>
   <ul>
   {% for item in site.data.research %}
-    <li><a {% if page.url == item.link %} id="outline-nav-current"{% endif %} href={{item.link}}>{{item.title}}</a></li>
+    <li><a {% if page.url == item.link %} id="outline-nav-current"{% endif %} href=#{{item.link}}>{{item.title}}</a></li>
   {% endfor %}
   </ul>
   
@@ -28,8 +28,8 @@ layout: base
   {% if current_res.imgs%}
     {% for img in current_res.imgs%}
     <p>{{img.description}} ↓ </p>
-    <img {% if img.width %} style="width: {{img.width}}" {% endif %} src="/assets/images/projs{{page.url}}/{{img.path}}">
-    <p></p>
+    <img {% if img.width %} style="width: {{img.width}}" {% endif %} src="/assets/images/projs/{{page.url}}/{{img.path}}">
+    <p> </p>
     {% endfor %}
   {% endif %}
 </div>
