@@ -1,8 +1,12 @@
 
 <div id="header" style="position: fixed; background-color: black; left: 0;right: 0; z-index: 99; max-width: 100vw"> 
 <div>
-    <h1> {{site.title}}</h1>
-
+    <div id="h_title">
+    <h1 style="display: inline-block;"> {{site.title}}</h1>
+    <!-- <img style="display: inline-block; height: var(--title-size);" src="/assets/images/psu_logo.svg"> -->
+    <a href=https://scholar.google.com/citations?user={{site.gscholar_id}}><img src="/assets/images/g_scholar.png"></a>
+    <a href=https://twitter.com/{{site.twitter_username}}><img src="/assets/images/twitter_logo.png"></a>
+    </div>
 {% include navigation.html %}
 </div>
 </div>

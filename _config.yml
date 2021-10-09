@@ -24,9 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   © 2021-2022 The Zhou Lab. All rights reserved.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: RuoboZhou
 github_username:  jekyll
-
+gscholar_id: -HscT38AAAAJ
 # Build settings
 theme: minima
 paginate: 10

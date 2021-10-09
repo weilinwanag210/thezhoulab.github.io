@@ -12,6 +12,7 @@
     --trans-theme: #74b9ffe3;
     --body-ratio: 60vw;
     --font-size: 10px;
+    --title-size: 33px;
 }
 
 #nav-current{
@@ -432,4 +433,22 @@ body{
   display: inline;
   padding: 0;
   padding-bottom: 2px;
+}
+
+#h_title a{
+  float: right;
+  padding: 10px;
+}
+
+#h_title a:before{
+  display: none;
+}
+
+#h_title img{
+  display: inline-block;
+  height: var(--title-size);
+  background-color: white;
+  mix-blend-mode: hard-light;
+  border-radius: 50%;
+  margin-top: 1em;
 }
