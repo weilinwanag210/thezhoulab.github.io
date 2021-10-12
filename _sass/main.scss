@@ -82,13 +82,13 @@ body  div{
 
 .avatar{
 	height: 200px;
-    width: 200px;
+  width: 200px;
 	object-fit: cover;
 	color: white;
 	float: left;
-    border-radius: 20%;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  	margin-right: 30px;
+  border-radius: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-right: 30px;
 }
 
 
@@ -177,7 +177,7 @@ canvas{ display: block; vertical-align: bottom; }
 
 #footer {
     max-width: 100%;
-    background-color: var(--trans-theme);
+    background-color: var(--theme);
     border-top: 1px solid transparent;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;    
@@ -451,4 +451,8 @@ body{
   mix-blend-mode: hard-light;
   border-radius: 50%;
   margin-top: 1em;
+}
+
+*{
+  scroll-behavior: smooth !important;
 }

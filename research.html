@@ -84,7 +84,7 @@ none .compare_overlay{
 <div style="display: block;">
 <div id="outline-nav">
   {% assign research = "/research" %}
-  <h2 class="collapsible" ><a style="color: white;" href="#">Projects</a></h2>
+  <h2 style="color: white;"><a style="color: white;" href="#">Projects</a></h2>
   <ul>
   {% for item in site.data.research %}
     <li class="collapsible" ><a href="#{{item.link}}">{{item.title}}</a></li>
@@ -93,34 +93,29 @@ none .compare_overlay{
   </ul>
   
 </div>
-<div id="r-content">
-  {% assign current=site.data.research[0] %}
-  <div class="anchor" id={{current.link}}>
-</div>
-    <h1>{{current.title}}</h1>
-  <p> Drag the bar below to compare the resolution between an conventional image(left) and STORM image(right) of the actin cytoskeleton in a mouse neuron cell</p>
-  <div class="compare">
-    <div class="cmp_img">
-      <img src="/assets/images/projs/srm1.png">
-    </div>
-    <div class="cmp_img compare_overlay">
-      <img src="/assets/images/projs/srm0.png">
-    </div>
+  <div id="r-content">
+    {% assign current=site.data.research[0] %}
+      <div class="anchor" id={{current.link}}></div>
+        <h1>{{current.title}}</h1>
+      <p> Drag the bar below to compare the resolution between an conventional image(left) and STORM image(right) of the actin cytoskeleton in a mouse neuron cell</p>
+      <div class="compare">
+        <div class="cmp_img">
+          <img src="/assets/images/projs/srm1.png">
+        </div>
+        <div class="cmp_img compare_overlay">
+          <img src="/assets/images/projs/srm0.png">
+        </div>
+      </div>
+      {% include research_img.html %}
+      {% assign current=site.data.research[1] %}
+      <div class="anchor" id={{current.link}}></div>
+      <h1>{{current.title}}</h1>
+      {% include research_img.html %}
+      {% assign current=site.data.research[2] %}
+      <div class="anchor" id={{current.link}}></div>
+      <h1>{{current.title}}</h1>
+      {% include research_img.html %}
   </div>
-  {% include research_img.html %}
-  {% assign current=site.data.research[1] %}
-  <div class="anchor" id={{current.link}}>
-  </div>
-    <h1>{{current.title}}</h1>
-    {% include research_img.html %}
-
-  {% assign current=site.data.research[2] %}
-  <div class="anchor" id={{current.link}}>
-  </div>
-    <h1>{{current.title}}</h1>
-    {% include research_img.html %}
-
-</div>
 </div>
 
 <script type="text/javascript">
@@ -170,7 +165,6 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
@@ -179,4 +173,37 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+window.addEventListener('scroll',(event) => {
+  scrollCheck();
+});
+  var scrollCheck = function () {
+
+      var anc = document.getElementsByClassName("anchor");
+      var coll = document.getElementsByClassName("collapsible");
+      var k;
+      var docTop = window.pageYOffset;
+      var docBot = docTop + window.innerHeight;
+      for (k = 0; k < anc.length; k++) {
+        var elemTop, elemBot;
+        elemTop = anc[k].offsetTop;
+        elemBot = elemTop + anc[k].offsetHeight;
+        if (elemTop <= docBot) {
+          var title = document.querySelectorAll(["a[href='#", anc[k].id, "']"].join(""));
+          var j;
+          var cur = title[0].parentElement;
+        }
+      }
+      var j;
+      for (j = 0; j < coll.length; j++) {
+        var con = coll[j].nextElementSibling;
+        coll[j].classList.remove("active");
+        con.style.display = "none";
+      }
+      cur.classList.toggle("active");
+      cur.nextElementSibling.style.display = "block";
+
+  }
 </script>
+
