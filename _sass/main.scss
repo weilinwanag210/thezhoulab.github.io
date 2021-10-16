@@ -221,7 +221,8 @@ canvas{ display: block; vertical-align: bottom; }
   text-decoration: underline;
 }
 
-#footer h4{
+#footer h1{
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 
@@ -442,6 +443,10 @@ body{
 
 #h_title a:before{
   display: none;
+}
+
+#h_title img:hover{
+  background-color: var(--theme);
 }
 
 #h_title img{
