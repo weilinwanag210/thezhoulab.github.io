@@ -4,7 +4,7 @@
   <div class="pub" {% unless {{pub.img}} %} style="height: 100px; margin-bottom: -5px" {% endunless %}>    
     
     {% if pub.img %}
-    <div class="pub_left_img">
+    <div class="pub_left_img" style="background-image: url(assets/images/pubs/{{pub.img}})">
     {% if background == 1 %}
     <div class="pub_background">
     <img src=assets/images/pubs/{{pub.img}}>

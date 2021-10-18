@@ -244,11 +244,6 @@ body{
   transition: transform .2s;
 }
 
-.pub_img:hover{
-  z-index: 10;
-  width:800px;
-}
-
 .pub{
   height: 120px;
   position: inline-flex;
@@ -297,13 +292,11 @@ body{
 .pub_left_img{
   float: left;
   width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  background-size: cover;
 }
 
-.pub_left_img{
-  float: left;
-  width: 80px; 
-  margin-right:20px;
-}
 
 .pub_left_img .pub_img{
   position: relative;
@@ -316,8 +309,8 @@ body{
 
 .pub_img:hover{
   z-index: 10;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 400px;
 }
 
 .pub_left_img:hover{
