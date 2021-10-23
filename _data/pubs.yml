@@ -158,6 +158,7 @@
 - author: DN Lorenzo, A Badea, R Zhou et al.
   title: βII-spectrin promotes mouse brain connectivity through stabilizing axonal plasma membranes and enabling axonal organelle transport.
   year: 2019
+  link: https://www.pnas.org/content/116/31/15686
   publisher: PNAS
   page: 116, 15686-15695
   type: 0
@@ -165,6 +166,7 @@
 - author: MD Brenner, R Zhou, et al.
   title: Spider silk peptide is a compact, linear nanospring ideal for intracellular tension sensing.
   year: 2016
+  link: https://pubs.acs.org/doi/10.1021/acs.nanolett.6b00305
   publisher: Nano Letters
   page: 16, 2096-2102
   type: 0
@@ -172,6 +174,7 @@
 - author: G Zhong, J He, R Zhou, D. Lorenzo, HP Babcock, V Bennett, X Zhuang.
   title: Developmental mechanism of the periodic membrane skeleton in axons.
   year: 2015
+  link: https://elifesciences.org/articles/04581
   publisher: eLife
   page: 3, e04581
   type: 0
@@ -179,6 +182,7 @@
 - author: B Hua, KY Han, R Zhou, H Kim, X Shi, SC Abeysirigunawardena, A Jain, D. Singh, V. Aggarwal, SA Woodson and T Ha.
   title: An improved surface passivation method for single-molecule studies.
   year: 2014
+  link: https://www.nature.com/articles/nmeth.3143
   publisher: Nature Methods
   page: 11, 1233-1236
   type: 0
@@ -186,6 +190,7 @@
 - author: B Bhattacharyya, NP George, TM Thurmes, R Zhou, N Jani, SR Wessel, SJ Sandler, T Ha and JL Keck.
   title: Structural mechanisms of PriA-mediated DNA replication restart.
   year: 2014
+  link: https://www.pnas.org/content/111/4/1373
   publisher: PNAS
   page: 111, 1373-1378
   type: 0
@@ -193,6 +198,7 @@
 - author: J Zhang, R Zhou, J Inoue, T Mikawa, T Ha.
   title: Single molecule analysis of Thermus thermophilus SSB protein dynamics on single-stranded DNA.
   year: 2013
+  link: https://academic.oup.com/nar/article/42/6/3821/2435249
   publisher: Nucleic Acids Research
   page: 42, 3821-3832
   type: 0
@@ -200,6 +206,7 @@
 - author: SR Wessel, AH Marceau, SC Massoni, R Zhou, T Ha, SJ Sandler and JL Keck.
   title: PriC-mediated DNA replication restart requires PriC complex formation with the single-stranded DNA-binding protein.
   year: 2013
+  link: https://www.sciencedirect.com/science/article/pii/S0021925820458971?via%3Dihub
   publisher: publisher of Biological Chemistry
   page: 288, 17569-17578
   type: 0
@@ -207,6 +214,7 @@
 - author: SH Yang, R Zhou, J Campbell, J Chen, T Ha, and TT Paull.
   title: The SOSS1 single-stranded DNA binding complex promotes DNA end resection in concert with Exo1.
   year: 2013
+  link: https://www.embopress.org/doi/full/10.1038/emboj.2012.314
   publisher: EMBO Journal
   page: 32, 126-132
   type: 0
@@ -214,12 +222,14 @@
 - author: NF Lue, R Zhou, L Chico, N Mao, O Steinberg-Neifach and T Ha.
   title: The Telomere Capping Complex CST Has an Unusual Stoichiometry, Makes Multipartite Interaction with G-Tails, and Unfolds Higher-Order G-Tail Structures.
   year: 2013
+  link: https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1003145
   publisher: PLoS Genetics
   page: 9, e1003145
   type: 0
 
 - author: R Zhou, T Ha.
   title: Single molecule analysis of SSB dynamics on DNA.
+  link: https://link.springer.com/protocol/10.1007%2F978-1-62703-032-8_5
   year: 2012
   publisher: Methods in Molecular Biology
   page: 922, 85-100
@@ -228,6 +238,7 @@
 - author: MD Brenner, R Zhou, and T Ha.
   title: "Forcing a connection: Impacts of single-molecule force spectroscopy on in vivo tension sensing."
   year: 2011
+  link: https://onlinelibrary.wiley.com/doi/10.1002/bip.21587
   publisher: Biopolymers
   page: 95, 332-344
   type: 0
@@ -235,6 +246,7 @@
 - author: R Zhou, M Schlierf, and T Ha.
   title: Fluorescence-force spectroscopy at the single molecule level.
   year: 2010
+  link: https://www.sciencedirect.com/science/article/pii/S0076687910750163?via%3Dihub
   publisher: Methods in Enzymology
   page: 475C, 405-426
   type: 0
