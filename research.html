@@ -11,15 +11,20 @@ title: Research
   --slider-height: calc(0.23 * var(--slider-width));
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
 .compare {
   position: relative;
-  height: var(--slider-height);
-  width: var(--slider-width);
+  height: var(--slider-height) !important;
+  width: var(--slider-width) !important;
 }
 
 .compare_overlay {
   position: absolute;
-  height: var(--slider-height);
+  height: var(--slider-height) !important;
   width: var(--slider-width);
   border-radius: 0rem;
   overflow: hidden;
@@ -120,6 +125,10 @@ none .compare_overlay{
 </div>
 
 <script type="text/javascript">
+  window.onresize = function(event)
+{
+document.location.reload(true);
+}
   let isClicked = false;
 const image = document.querySelector(".compare_overlay");
 const width = image.offsetWidth;
