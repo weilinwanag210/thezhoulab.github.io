@@ -1,3 +1,12 @@
+
+# Format:
+# - author:
+#   title:
+#   year: [year].[priority: high to low]
+#   publisher:
+#   page:
+#   type:
+
 - author: R Zhou, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang.
   title: Proteomic and functional analyses of the periodic membrane skeleton in neurons.
   year: 2020
@@ -8,7 +17,7 @@
 
 - author: R Zhou, B Han, C Xia, X Zhuang.
   title: Membrane-associated periodic skeleton is a signaling platform for RTK transactivation in neurons.
-  year: 2019
+  year: 2019.2
   type: 1
   link: https://www.science.org/doi/10.1126/science.aaw5937
   publisher: Science
@@ -23,7 +32,7 @@
     
 - author: R Zhou (co-corresponding author), O Yang, AC Déclais et al.
   title: Junction resolving enzymes use multivalency to keep the Holliday junction dynamic.
-  year: 2019
+  year: 2019.1
   type: 1
   link: https://www.nature.com/articles/s41589-018-0209-y
   publisher: Nature Chemical Biology
@@ -250,11 +259,3 @@
   publisher: Methods in Enzymology
   page: 475C, 405-426
   type: 0
-
-# Format:
-# - author:
-#   title:
-#   year:
-#   publisher:
-#   page:
-#   type:

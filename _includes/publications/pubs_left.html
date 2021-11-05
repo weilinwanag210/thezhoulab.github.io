@@ -18,7 +18,8 @@
     
       <p style="margin-top: 0;"><a href={{pub.link}}><span>{{pub_num}}. {{pub.title}}</span></a></p>
       {% assign other_author = pub.author | split: author %}
-      <p><span>{{other_author[0]}}</span><b>{{author}}</b><span>{{other_author[1]}}</span><span style="font-style: italic; font-weight: bold;"> {{pub.publisher}}</span><span> {{pub.page}}</span></span><span> ({{pub.year}})</span></p>
+      {% assign year = pub.year | split: "." %}
+      <p><span>{{other_author[0]}}</span><b>{{author}}</b><span>{{other_author[1]}}</span><span style="font-style: italic; font-weight: bold;"> {{pub.publisher}}</span><span> {{pub.page}}</span></span><span> ({{year[0]}})</span></p>
 
       {% if pub.highlight %}
       <p style="font-size: 10px"><a href={{pub.highlight.link}}>Highlighted in <span style="font-style: italic; font-weight: bold;">{{pub.highlight.publisher}} </span>{{pub.highlight.page}} ({{pub.highlight.year}}): {{pub.highlight.title}} </a></p>
