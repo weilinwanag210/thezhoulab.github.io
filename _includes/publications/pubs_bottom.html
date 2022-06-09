@@ -3,7 +3,7 @@
 {%- for pub in pubs: -%}
   <div class="pub" style="height: auto;">    
     
-    <div class="pub_text" style="width: 1000px;" >
+    <div class="pub_text" style="width: 1000px;margin:0;" >
     
       <p style="margin-top: 0;"><a href={{pub.link}}><span>{{pub_num}}. {{pub.title}}</span></a></p>
       {% assign other_author = pub.author | split: author %}
