@@ -7,6 +7,12 @@ layout: particles-js
 {%- assign pub_num = all_pubs.size -%}
 {% assign author = "R Zhou" %}
 
+{%- assign pubs = all_pubs | where: "type", "2" | sort: 'years' | reverse -%}
+<h1>Independent Career (corresponding authors underlined) </h1> 
+{% include publications/pubs_bottom.html %}
+
+
+<h1 style="padding-top: 100px">Prior to Penn State:</h1>
 {%- assign pubs = all_pubs | where: "type", "1" | sort: 'years' | reverse -%}
 <h2>Selected publications: </h2>
 {% include publications/pubs_bottom.html %}

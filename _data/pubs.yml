@@ -8,13 +8,16 @@
 #   type:
 
 - author: R Zhou, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang.
+  corres: 
+    - R Zhou 
+    - X Zhuang
   title: Proteomic and functional analyses of the periodic membrane skeleton in neurons.
   year: 2022.6
   img: rxiv.jpg
   page: 13, 3196
   publisher: Nature Communications
   link: https://www.nature.com/articles/s41467-022-30720-x
-  type: 1
+  type: 2
 
 - author: R Zhou, B Han, C Xia, X Zhuang.
   title: Membrane-associated periodic skeleton is a signaling platform for RTK transactivation in neurons.
