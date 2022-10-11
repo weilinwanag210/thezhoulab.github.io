@@ -28,7 +28,7 @@ Postdoctoral Researcher:
 Graduate Student:
   - name: Han Zhang
     education: M.S. Pharmaceutical Science, Peking University./B.S. Medical Science, Peking University. 
-    interest: Membrane contact sites, Imaging methods. 
+    interest: Membrane contact sites, Imaging methods
     img: Han_Zhang.jpeg
     email: hfz5128@psu.edu
   - name: Haopeng Yang
@@ -47,6 +47,12 @@ Graduate Student:
     email: ypt5106@psu.edu
     
 Undergraduate Student:
+  - name: Rowan Cothren
+    education: Class of 2024, Penn State University
+    interest: Medicinal chemistry, Imaging methods
+    major: Chemistry
+    img: Rowan_Cothren.jpeg
+    email: rzc5560@psu.edu
   - name: Poom Chantarapornrat
     education: Class of 2023, Penn State University
     major: Chemistry 
