@@ -1,5 +1,6 @@
 {% assign background=0 %}
 <div id="pubs">
+{% assign l_authors = lab_authors | split: ", " %}
 {%- for pub in pubs: -%}
   <div class="pub" {% unless {{pub.img}} %} style="height: 100px; margin-bottom: -5px" {% endunless %}>    
     
@@ -17,9 +18,27 @@
     <div class="pub_right_text" {% unless {{pub.img}} %} style="float:  left; min-width: 600px;" {% endunless %}>
     
       <p style="margin-top: 0;"><a href={{pub.link}}><span>{{pub_num}}. {{pub.title}}</span></a></p>
-      {% assign other_author = pub.author | split: author %}
+      {% assign authors = pub.author | split: ", " %}
       {% assign year = pub.year | split: "." %}
-      <p><span>{{other_author[0]}}</span><b>{{author}}</b><span>{{other_author[1]}}</span><span style="font-style: italic; font-weight: bold;"> {{pub.publisher}}</span><span> {{pub.page}}</span></span><span> ({{year[0]}})</span></p>
+      <p>
+
+      {% for author in authors: %}
+          {% assign lab = false %}
+          {% for l_author in l_authors: %}
+            {% if author contains l_author %}
+              {% assign lab = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if lab == true %}
+            <b class="author">{{author}}</b>
+          {% else %}
+            <span>{{author}}</span>
+          {% endif%}
+          {% if forloop.last == false %}<span>, </span>{% endif %}
+      {% endfor %}
+
+      <span style="font-style: italic; font-weight: bold;"> {{pub.publisher}}</span><span> {{pub.page}}</span></span><span> ({{year[0]}})</span></p>
 
       {% if pub.highlight %}
       <p style="font-size: 10px"><a href={{pub.highlight.link}}>Highlighted in <span style="font-style: italic; font-weight: bold;">{{pub.highlight.publisher}} </span>{{pub.highlight.page}} ({{pub.highlight.year}}): {{pub.highlight.title}} </a></p>
