@@ -7,10 +7,12 @@
 #   page:
 #   type:
 
-- author: R Zhou, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang.
-  corres: 
-    - R Zhou 
-    - X Zhuang
+- author: J Fei, R Zhou#. 
+  publisher: Science 
+  year: in press
+  type: 2
+  img: inpress.jpeg
+- author: R Zhou#, B Han, R Nowak, Y Lu, E Heller, C Xia, AH Chishti, VM Fowler, X Zhuang#.
   title: Proteomic and functional analyses of the periodic membrane skeleton in neurons.
   year: 2022.6
   img: rxiv.webp
@@ -34,7 +36,7 @@
     page: 20, 647 
     year: 2019
     
-- author: R Zhou (co-corresponding author), O Yang, AC Déclais et al.
+- author: R Zhou# (co-corresponding author), O Yang, AC Déclais et al.
   title: Junction resolving enzymes use multivalency to keep the Holliday junction dynamic.
   year: 2019.1
   type: 1
@@ -58,7 +60,7 @@
   publisher: Science
   page: 361, 880-887
 
-- author: B Han, R Zhou (co-first author, co-corresponding author), C Xia, X Zhuang.
+- author: B Han, R Zhou# (co-first author, co-corresponding author), C Xia, X Zhuang#.
   title: Structural organization of the actin-spectrin–based membrane skeleton in dendrites and soma of neurons
   year: 2017
   type: 1
