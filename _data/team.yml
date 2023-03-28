@@ -10,9 +10,6 @@ Research Staff Assistant:
   - name: Joshua Wales
     img: Joshua_Wales.jpg
     email: jdw306@psu.edu
-  - name: Pam Wagner
-    img: Pam.jpeg
-    email: pjw5362@psu.edu
 
 Postdoctoral Researcher:
   - name: Hongyun Li
@@ -54,6 +51,11 @@ Graduate Student:
     email: gfx5015@psu.edu
 
 Undergraduate Student:
+  - name: Aditi Maheshwari
+    education: Class of 2026, Penn State University
+    interest: Medical physics, Super resolution imaging, Oncology
+    img: Aditi_Maheshwari.png
+    email: afm6441@psu.edu
   - name: Rowan Coltrane Cothren
     education: Class of 2024, Penn State University
     interest: Medicinal chemistry, Imaging methods
