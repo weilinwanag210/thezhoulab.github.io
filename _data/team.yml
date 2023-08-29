@@ -74,13 +74,15 @@ Undergraduate Student:
     major: Chemistry
     img: Ebenezer_Karikari.jpeg
     email: evk5537@psu.edu
-  - name: Poom Chantarapornrat
-    education: Class of 2023, Penn State University
-    major: Chemistry 
-    img: Poom_Chantarapornrat.jpeg
-    email: poom@psu.edu
   - name: Caden LaLonde
     education: Class of 2026, Penn State University
     interest: Virotherapy and oncology
     email: cgl5200@psu.edu
     img: Caden_LaLonde.jpg
+
+Alumni:
+  - name: Poom Chantarapornrat
+    education: Class of 2023, Penn State University
+    major: Chemistry 
+    img: Poom_Chantarapornrat.jpeg
+    email: poom@psu.edu
