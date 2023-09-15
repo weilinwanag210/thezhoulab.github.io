@@ -21,34 +21,59 @@ Postdoctoral Researcher:
 Graduate Student:
   - name: Han Zhang
     education: M.S. Pharmaceutical Science, Peking University./B.S. Medical Science, Peking University. 
-    interest: Membrane contact sites, Imaging methods
+    interest: Developing novel fluorescent probes and super-resolution imaging methods
     img: Han_Zhang.jpeg
     email: hfz5128@psu.edu
+    year: 2019
   - name: Haopeng Yang
     education: B.S. Chemistry, Nankai University
     interest: Chemical Biology, Protein liquid-liquid phase separation, Super-resolution imaging 
     img: Haopeng_Yang.png
     email: hqy5226@psu.edu
+    year: 2019
   - name: Jinyu Fei
     education: B.S. Pharmaceutical Science, Fudan University
     interest: Membrane-associated periodic skeleton, Receptor tyrosine kinase, Super-resolution imaging
     img: Jinyu_Fei.png
     email: jzf5579@psu.edu
+    year: 2019
   - name: Yuan Tao
     education: M.S. Mathematical, Computational, and Systems Biology, UCI./B.S. Computer Science and Technology, Zhejiang University
     interest: Super-resolution imaging, Spatial transcriptomics, Neurobiology, Neurodegenerative diseases, Aging
     img: Yuan_Tao.jpg
     email: ytao7@psu.edu
+    year: 2022
   - name: Mengde Liu 
     education: B.S. Biomedical Engineering, Penn State University
     interest: Machine learning, Super-resolution imaging methods
     img: Mengde_Liu.jpeg
     email: mbl5592@psu.edu
+    year: 2022
   - name: Guangtao Xu
     education: B.S. Biological Sciences, University of Science and Technology of China
     interest: Super-resolution imaging, Spatial transcriptomics, Neuroscience
     img: Guangtao_Xu.jpg
     email: gfx5015@psu.edu
+    year: 2022.5
+  - name: Xuye Wang
+    education: M.S. Medical Science, Kyoto University/B.S. Pharmacy, Central South University 
+    interest: Super-resolution imaging methods, Neurodegenerative diseases
+    img: Xuye_Wang.jpg
+    email: xfw5203@psu.edu
+    year: 2023
+  - name: Yuanmin Zheng
+    education: M.S. Bioscience, King Abdullah University of Science and Technology / B.E. Bioengineering, Beijing University of Chemical Engineering
+    interest: Structure Biology, Cellular & Neural Biology, Bioimaging 
+    email: ykz5611@psu.edu
+    img: Yuanmin_Zheng.jpg
+    year: 2023
+  - name: Yinqi Wang
+    education: B.S. Chemistry，University of Science and Technology of China
+    interest: Developing novel fluorescent probes and super-resolution imaging methods
+    email: yinqiwang125@psu.edu
+    img: Yinqi_Wang.jpg
+    year: 2023
+
 
 Undergraduate Student:
   - name: Aditi Maheshwari
@@ -79,6 +104,17 @@ Undergraduate Student:
     interest: Virotherapy and oncology
     email: cgl5200@psu.edu
     img: Caden_LaLonde.jpg
+  - name: Milap Atul Mistry
+    # education: Class of 2025, Penn State University
+    # major:
+    # interest:
+    # img:
+    email: mvm6804@psu.edu
+  - name: Qingyan Yang
+    education: Class of 2024, University of Science and Technology of China
+    interest: Immunology,  Super-resolution imaging
+    email: yzq5088@psu.edu
+    img: Qingyan_Yang.jpg
 
 Alumni:
   - name: Poom Chantarapornrat

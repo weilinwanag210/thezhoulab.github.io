@@ -11,7 +11,7 @@ permalink: /team
   {% for position in team %}
     <div id="position">
       <h2>{{ position[0] }}</h2>
-      {% assign members = position[1] | sort: 'name' %}
+      {% assign members = position[1] | sort: 'year' %}
     	{% for member in members %}
 	    	<div id="member">
 	    		<img alt={{member.name}} class="avatar" src=/assets/images/team/{{member.img}}>
