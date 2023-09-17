@@ -105,10 +105,9 @@ Undergraduate Student:
     email: cgl5200@psu.edu
     img: Caden_LaLonde.jpg
   - name: Milap Atul Mistry
-    # education: Class of 2025, Penn State University
-    # major:
-    # interest:
-    # img:
+    education: Class of 2026, Penn State University
+    interest: Medicinal Biochemistry & Neurodegenerative Diseases
+    img: Milap_Atul_Mistry.jpg
     email: mvm6804@psu.edu
   - name: Qingyan Yang
     education: Class of 2024, University of Science and Technology of China
