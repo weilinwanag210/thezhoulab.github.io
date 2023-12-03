@@ -43,12 +43,6 @@ Graduate Student:
     img: Yuan_Tao.jpg
     email: ytao7@psu.edu
     year: 2022
-  - name: Mengde Liu 
-    education: B.S. Biomedical Engineering, Penn State University
-    interest: Machine learning, Super-resolution imaging methods
-    img: Mengde_Liu.jpeg
-    email: mbl5592@psu.edu
-    year: 2022
   - name: Guangtao Xu
     education: B.S. Biological Sciences, University of Science and Technology of China
     interest: Super-resolution imaging, Spatial transcriptomics, Neuroscience
@@ -121,3 +115,10 @@ Alumni:
     major: Chemistry 
     img: Poom_Chantarapornrat.jpeg
     email: poom@psu.edu
+    current: Graduate Student at Boston University
+  - name: Mengde Liu
+    education: B.S. Biomedical Engineering, Penn State University
+#    interest: Machine learning, Super-resolution imaging methods
+    img: Mengde_Liu.jpeg
+    email: mbl5592@psu.edu
+    current: Graduate Student at Duke University
