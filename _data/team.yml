@@ -73,7 +73,12 @@ Graduate Student:
     img: Ruisheng_Xu.jpg
     email: rbx5039@psu.edu
     year: 2024
-
+  - name: Qingyan Yang
+    education: B.S. Biological Sciences, University of Science and Technology of China
+    interest: Immunology,  Super-resolution imaging
+    email: yzq5088@psu.edu
+    img: Qingyan_Yang.jpg
+    year: 2024
 
 Undergraduate Student:
   - name: Aditi Maheshwari
@@ -109,11 +114,7 @@ Undergraduate Student:
     interest: Medicinal Biochemistry & Neurodegenerative Diseases
     img: Milap_Atul_Mistry.jpg
     email: mvm6804@psu.edu
-  - name: Qingyan Yang
-    education: Class of 2024, University of Science and Technology of China
-    interest: Immunology,  Super-resolution imaging
-    email: yzq5088@psu.edu
-    img: Qingyan_Yang.jpg
+
 
 Alumni:
   - name: Poom Chantarapornrat
